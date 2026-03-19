@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="src/notie-master/dist/notie.min.css" />
   </head>
   <body>
     <header>
@@ -31,37 +32,12 @@
       <section id="movie-list"></section>
       <article id="modal-overlay" class="overlay">
         <section id="modal-background"></section>
-        <section id="modal-container">
-          <h2 id="movie-title">The Impossible - 2012</h2>
-          <section id="modal-body">
-            <img
-              id="movie-poster"
-              src="https://m.media-amazon.com/images/M/MV5BZjM1ZTJkMjctY2M0ZC00ZTkyLTliYTktNzYxYWIzYTAyOTRjXkEyXkFqcGc@._V1_SX300.jpg"
-              alt="Poster do filme"
-            />
-            <div id="movie-info">
-              <h3 id="movie-plot">
-                The story of a tourist family in Thailand caught in the
-                destruction and chaotic aftermath of the 2004 Indian Ocean
-                tsunami.
-              </h3>
-              <div id="movie-cast">
-                <h4>Elenco:</h4>
-                <h5>Naomi Watts, Ewan McGregor, Tom Holland</h5>
-              </div>
-              <div id="movie-genre">
-                <h4>Gênero:</h4>
-                <h5>Drama, History, Thriller</h5>
-              </div>
-            </div>
-          </section>
-          <section id="modal-footer">
-            <button id="add-to-list">Adicionar à lista</button>
-          </section>
-        </section>
+        <section id="modal-container"></section>
       </article>
     </main>
+    <script src="key.js"></script>
     <script src="modal.js"></script>
     <script src="script.js"></script>
+    <script src="src/notie-master/dist/notie.min.js"></script>
   </body>
 </html>
