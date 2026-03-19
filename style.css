@@ -19,6 +19,11 @@ body {
   min-height: 100dvh;
 }
 
+button {
+  all: unset;
+  cursor: pointer;
+}
+
 /* Header */
 
 header {
@@ -53,10 +58,6 @@ header h1 i {
   align-items: center;
 }
 
-#search-button {
-  width: 5%;
-}
-
 .movie-year-wrapper input {
   max-width: 5rem;
 }
@@ -79,6 +80,7 @@ header h1 i {
 }
 
 #search-button {
+  width: 5%;
   all: unset;
   padding: 0.3rem;
   border: 2px solid var(--ligthest-color);
@@ -88,7 +90,6 @@ header h1 i {
 #search-button:focus,
 #search-button:hover {
   background-color: var(--light-primary);
-  cursor: pointer;
 }
 
 /* Main */
