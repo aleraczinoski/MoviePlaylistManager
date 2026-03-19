@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #003049;
+  --light-primary: #669bbc;
+  --secondary-color: #780000;
+  --light-secondary: #c1121f;
+  --ligthest-color: #fdf0d5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--ligthest-color);
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+header h1 i {
+  margin-right: 0.5rem;
+}
+
+.movie-name-wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.movie-year-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#search-button {
+  width: 5%;
+}
+
+.movie-year-wrapper input {
+  max-width: 5rem;
+}
+
+.movie-name-wrapper input {
+  width: 100%;
+}
+
+.movie-name-wrapper input,
+.movie-year-wrapper input {
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  padding: 0.3rem 0.2rem;
+  font-weight: 700;
+}
+
+.movie-name-wrapper label,
+.movie-year-wrapper label {
+  font-weight: 700;
+}
+
+#search-button {
+  all: unset;
+  padding: 0.3rem;
+  border: 2px solid var(--ligthest-color);
+  border-radius: 10px;
+}
+
+#search-button:focus,
+#search-button:hover {
+  background-color: var(--light-primary);
+  cursor: pointer;
+}
+
+/* Main */
+
+main {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--ligthest-color);
+  color: var(--primary-color);
+  flex-grow: 1;
+}
