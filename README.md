@@ -4,7 +4,7 @@ Uma aplicação web interativa para pesquisar filmes e criar uma lista de intere
 
 ## 🚀 Funcionalidades
 
-* **Busca Inteligente:** Pesquise filmes pelo título e filtre pelo ano de lançamento consumindo os dados da OMDb API.
+* **Busca Inteligente:** Pesquise filmes pelo título e filtre pelo ano de lançamento consumindo os dados da OMDb API (Open Movie Database API).
 * **Detalhes em Modal:** Visualize informações completas antes de adicionar à lista (pôster, sinopse, elenco e gênero).
 * **Gerenciamento da Lista:** Adicione e remova filmes da sua lista pessoal com facilidade.
 * **Prevenção de Duplicatas:** O sistema valida e impede que o mesmo filme seja adicionado mais de uma vez na sua lista.
