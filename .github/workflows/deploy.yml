@@ -21,7 +21,7 @@ jobs:
 
       - name: Injetar a API Key no config.js
         run: |
-          echo "const MINHA_API_KEY = '${{ secrets.MINHA_API_KEY }}';" > config.js
+          echo "const key = '${{ secrets.API_KEY }}';" > key.js
 
       - name: Configurar o GitHub Pages
         uses: actions/configure-pages@v4
