@@ -1,0 +1,33 @@
+name: Deploy site com API Key
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar o código do repositório
+        uses: actions/checkout@v4
+
+      - name: Injetar a API Key no key.js
+        run: |
+          echo "const MINHA_API_KEY = '${{ secrets.MINHA_API_KEY }}';" > key.js
+
+      - name: Configurar o GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Fazer o upload dos arquivos do site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Publicar no GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
