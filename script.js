@@ -8,7 +8,7 @@ let movieList = JSON.parse(localStorage.getItem("movieList")) ?? []; // Se for n
 
 async function searchButtonHandler() {
   try {
-    let url = `http://www.omdbapi.com/?apikey=${key}&t=${movieNameParameterGenerator()}${movieYearParameterGenerator()}`;
+    let url = `https://www.omdbapi.com/?apikey=${key}&t=${movieNameParameterGenerator()}${movieYearParameterGenerator()}`;
     const response = await fetch(url);
     const data = await response.json();
     if (data.Error) {
