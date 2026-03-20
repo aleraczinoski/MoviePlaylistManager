@@ -83,3 +83,37 @@
   background-color: var(--light-primary);
   color: var(--ligthest-color);
 }
+
+/* Responsividade Mobile Modal */
+@media (max-width: 768px) {
+  #modal-container {
+    width: 90%;
+    max-height: 90dvh;
+    overflow-y: auto;
+    padding: 1rem 1.5rem;
+  }
+
+  #modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #movie-poster {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #movie-info {
+    padding-left: 0;
+    padding-top: 1.5rem;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  #add-to-list {
+    width: auto;
+    padding: 0.5rem 2rem;
+  }
+}

@@ -139,3 +139,36 @@ main {
   background-color: var(--light-secondary);
   color: var(--ligthest-color);
 }
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #search-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .movie-name-wrapper,
+  .movie-year-wrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .movie-name-wrapper input,
+  .movie-year-wrapper input {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #search-button {
+    width: auto;
+    padding: 0.8rem 2rem;
+  }
+}
